@@ -1,0 +1,19 @@
+{
+  "tarea": "id-corto-de-la-tarea",
+  "fecha": "AAAA-MM-DDTHH:MM:SS-04:00",
+  "worktree": ".agent_worktrees/id-corto-de-la-tarea",
+  "commit_base": "hash",
+  "archivos_modificados": ["src/modulo/archivo.ts"],
+  "evidencia": [
+    { "comando": "npm test", "codigo_salida": 0, "resumen": "18 pruebas, 0 fallidas" },
+    { "comando": "npx tsc --noEmit", "codigo_salida": 0, "resumen": "sin errores" }
+  ],
+  "verificacion": {
+    "revisor": "rol distinto del que generó (subagente revisor o sesión aparte)",
+    "escenarios_probados": ["entrada vacía", "concurrencia", "archivo fuera del contrato"],
+    "veredicto": "APROBADO",
+    "motivo": ""
+  },
+  "pendiente": [],
+  "aprendizaje_nuevo": ""
+}

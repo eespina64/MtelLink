@@ -1,0 +1,15 @@
+{
+  "tarea": "id-corto-de-la-tarea",
+  "fecha": "AAAA-MM-DD",
+  "pedido": "Qué se quiere lograr, en una o dos frases",
+  "aprobado_por": "Dr. h.c. Eduardo E. Espina Castillo",
+  "lectura_permitida": ["src/modulo/", "tests/modulo/"],
+  "escritura_permitida": ["src/modulo/archivo.ts", "tests/modulo/archivo.test.ts"],
+  "prohibido": [".env", "docker-compose.yml", "migrations/", "package-lock.json"],
+  "criterios_aceptacion": [
+    { "comando": "npm test", "codigo_esperado": 0 },
+    { "comando": "npx tsc --noEmit", "codigo_esperado": 0 }
+  ],
+  "evidencia_requerida": [".claude/receipts/recibo-id-corto-de-la-tarea.json"],
+  "limites": { "turnos_max": 20, "minutos_max": 30 }
+}
